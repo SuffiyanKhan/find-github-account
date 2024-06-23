@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .main{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 86vh;
+        }
+        .main div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+           width: 60%;
+           height: 550px;
+            border: 3px solid black;
+            position: relative;
+            border-radius: 20px;
+            /* bottom: ; */
+        }
+        .main div .image{
+            width: 100px;
+            height: 140px;
+            /* border-radius: 50%; */
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border: none;
+            /* bottom: 27px; */
+            /* top: 80px; */
+        }
+        .main div .image img{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+        }
+        .main div .userName{
+            width: 100%;
+            height:80px;
+            border: none;
+        }
+        .main div .userName p{
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .serac{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100px; */
+        }
+        .serac div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid; */
+            width: 500px;
+            height: 80px;
+            position: relative;
+            top: 25px;
+            gap: 10px;
+        }
+        .serac div input{
+            width: 60%;
+        }
+        .main div .bottom{
+            position: relative;
+            text-align: center;
+            bottom: 6px;
+            width: 100%;
+            height: 23%;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;            
+        }
+        .main div .bottom p{
+            position: relative;
+            top: 10px;
+            font-size: 20px;
+            /* font-size: 16px; */
+            /* top: 7px; */
+        }
+        .main div .fotter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            bottom: 3px;
+            width: 100%;
+            height: 60px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2vw;
+            border: none;
+        }
+        .main div .fotter p{
+            position: relative;
+            top: 10px;
+        }
+        .main div .github{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            border: none;
+            text-decoration: none;
+        }
+        .main div .github #github:hover{
+            text-decoration: underline;
+        }
+        /* @media (max-width:2200px) {
+            .main div{
+                width: 60%;
+                height: 550px;
+            }
+        } */
+        @media (max-width:2200px) {
+            /* .main{
+                position: relative;
+                top: 60px;
+            }
+            .main div{
+                width: 80%;
+                height: 600px;
+            } */
+            /* .serac div{
+                position: relative;
+                top: 200px;
+            }
+            .serac div input{
+                width: 130%;
+                height: 90px;
+                font-size: 20px;
+            } */
+            .main div .github #github{
+                text-decoration: none;
+
+                font-size: 27px;
+            }
+            /* .main div .bottom {
+                font-size: 7vw;
+            } */
+            .main div .image img{
+                width: 180px ;
+                height: 180px;
+                border-radius: 50%;
+            }
+        }
+        @media (max-width:1000px) {
+            .serac div{
+                position: relative;
+                top: 100px;
+            }
+            .main div .fotter p{
+                font-size: 2.7vw;
+            }
+            .main div .github a{
+                font-size: 19px;
+            }
+        }
+        @media (max-width:600px) {
+            .main{
+                position: relative;
+                top: 40px;
+            }
+            .serac div{
+                position: relative;
+                top: 100px;
+            }
+            .main div {
+                font-size: 3.5vw;
+                width: 100%;
+                
+                /* display: none; */
+            }
+            .main div .image img{
+                width: 160px ;
+                height: 160px;
+                border-radius: 50%;
+            }
+            /* .main div .image img{
+                width: 200px;
+                height: 200px;
+            } */
+            .main div .fotter p{
+                font-size: 3.5vw;
+            }
+
+        }
+        @media (max-width:400px) {
+            .main {
+                position: relative;
+                top: 35px;
+            }
+            .main div{
+                position: relative;
+                /* top: 10px; */
+            }
+            .serac div{
+                position: relative;
+                top: 55px;
+            }
+            .serac div input{
+                width: 70%;
+            }
+            .main div .image img{
+                width: 140px ;
+                height: 140px;
+                border-radius: 50%;
+            }
+            .main div .fotter p{
+                font-size: 4.6vw;
+            }
+            .main div .github a{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="serac">
+        <div>
+            <input placeholder="Enter user name" class="form-control" type="text" id="serac">
+            <button class="btn btn-success" id="serachBtn" >Serach</button>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <div class="image">
+                <img id="images" src="./image/download.png" alt="">
+            </div>
+            <div class="userName">
+                <p id="userName">User Name</p>
+            </div>
+            <div class="bottom">
+                <p id="desc">No Bio . Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="fotter">
+                <p id="followers">Followers :0</p>
+                <p id="repo">Repository : 0</p>
+                <p id="following">Following : 0</p>
+            </div>
+            <div class="github">
+                <a id="github" target="_blank" href="#">Go to github <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
